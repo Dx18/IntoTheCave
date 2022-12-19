@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54533d2539db95d87855f3febb1557e2, type: 3}
+  m_Name: GamePrefabs
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 8383704400694884924, guid: 1c833273df7820275b280c2f90f0cbf0, type: 3}
+  ratPrefab: {fileID: 960590667192180770, guid: 5ffc79e00fba44641add91967e668fc9, type: 3}
+  stonethrowerPrefab: {fileID: 6981806983826828086, guid: e39526b9f111965de9decc253d5c0b88, type: 3}
+  alchemistPrefab: {fileID: 8220567170540605895, guid: ebb9200ecda3f03b7876dc179ac7e3b2, type: 3}
+  slimePrefab: {fileID: 8506446212420331186, guid: 8e6bde2227292c7d7860d67abc000a14, type: 3}
+  slimeNestPrefab: {fileID: 4707783025406515302, guid: 8764160edf1060219be9b7ca121d96c6, type: 3}
+  stonePrefab: {fileID: 1815502215640395754, guid: 83dff955e11ba2b6bb0dd51e2718221e, type: 3}
+  potionPrefab: {fileID: 1815502215640395754, guid: f51a56f94e199c6a582f4ba00981e42e, type: 3}
+  droppedItemPrefab: {fileID: 6005033601487983598, guid: deabbd9327597b3be98f24e2141a7d07, type: 3}
+  slotPrefab: {fileID: 5878281262693052363, guid: 84cdeede8c1981b2f82bc572fb5802ef, type: 3}
+  mapPrefab: {fileID: 3530252266685948177, guid: 7d521f756c2a85a4e88dfe6bc1347bcf, type: 3}

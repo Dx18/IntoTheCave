@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2037c5e32cb235afa654b0bb4138c43, type: 3}
+  m_Name: GameRules
+  m_EditorClassIdentifier: 
+  itemPickupDistance: 1
+  potionEffectDistance: 2
+  potionTargetDistance: 0.5
+  meleeAttackDistance: 1
+  stoneSpeed: 4
+  potionSpeed: 4
+  inventoryCapacity: 10
+  roomWidth: 10
+  roomHeightMin: 5
+  roomHeightMax: 15
+  visionDistance: 8
+  ratMaxHealth: 3
+  ratBaseSpeed: 5
+  ratBaseDamage: 2
+  ratExperience: 1
+  ratAttackDistance: 0.6
+  ratAttackCooldown: 1
+  ratSpawnPotential: 3
+  ratTailDropRate: 0.5
+  stonethrowerMaxHealth: 10
+  stonethrowerBaseSpeed: 2.5
+  stonethrowerBaseDamage: 3
+  stonethrowerExperience: 3
+  stonethrowerMinDistance: 3
+  stonethrowerMaxDistance: 7
+  stonethrowerAttackCooldown: 2
+  stonethrowerSpawnPotential: 7
+  stonethrowerScalesDropRate: 0.3
+  alchemistMaxHealth: 7
+  alchemistBaseSpeed: 3.5
+  alchemistExperience: 5
+  alchemistMinDistance: 5
+  alchemistMaxDistance: 7
+  alchemistAttackCooldown: 3
+  alchemistSpawnPotential: 9
+  alchemistPotionDropRate: 0.25
+  slimeMaxHealth: 2.5
+  slimeBaseSpeed: 6
+  slimeBaseDamage: 1.5
+  slimeExperience: 2
+  slimeAttackDistance: 0.6
+  slimeSpeedMultiplier: 0.5
+  slimeSpeedReduceDuration: 2
+  slimeAttackCooldown: 1
+  slimeSpawnPotential: 2
+  slimeBallDropRate: 0.4
+  slimeNestMaxHealth: 30
+  slimeNestExperience: 15
+  slimeNestSpawnCooldown: 3
+  slimeNestSpawnDistance: 0.5
+  slimeNestSpawnPotential: 30
+  slimeNestCoreDropRate: 0.1
+  idleUtility: 0.001
+  items:
+  - id: speedPotion
+    name: Speed potion
+    description: Increases speed
+    sprite: {fileID: -1252635454, guid: 34b833eacca6756e9a60d79961501adc, type: 3}
+    features:
+    - speedPotion
+    - usable
+  - id: regenerationPotion
+    name: Regeneration potion
+    description: Regenerates health
+    sprite: {fileID: -1225156467, guid: 34b833eacca6756e9a60d79961501adc, type: 3}
+    features:
+    - regenerationPotion
+    - usable
+  - id: slimeBall
+    name: Slime ball
+    description: A little slime ball
+    sprite: {fileID: 1180908915, guid: 34b833eacca6756e9a60d79961501adc, type: 3}
+    features: []
+  - id: slimeNestCore
+    name: Slime nest core
+    description: Core of slime nest
+    sprite: {fileID: -2009332481, guid: 34b833eacca6756e9a60d79961501adc, type: 3}
+    features: []
+  - id: ratTail
+    name: Rat tail
+    description: Every rat has a tail
+    sprite: {fileID: -1130359456, guid: 34b833eacca6756e9a60d79961501adc, type: 3}
+    features: []
+  - id: stonethrowerScales
+    name: Stonethrower scales
+    description: Scales protecting stonethrower
+    sprite: {fileID: 812318346, guid: 34b833eacca6756e9a60d79961501adc, type: 3}
+    features: []
+  recipes:
+  - inputs:
+    - slimeBall
+    - slimeNestCore
+    output: speedPotion
+  - inputs:
+    - ratTail
+    - stonethrowerScales
+    output: regenerationPotion
+  followingCameraSmoothness: 0
